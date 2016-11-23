@@ -1,0 +1,18 @@
+实现基于RTSP协议的海康摄像头的实时录像监控以及图片抓取
+ 1、导入webcam-capture-0.3.12-20160507.091613-2.jar 并add as lib
+ 2、添加dependency
+      <dependency>
+              <groupId>uk.co.caprica</groupId>
+              <artifactId>vlcj</artifactId>
+              <version>3.10.1</version>
+          </dependency>
+          <dependency>
+              <groupId>org.slf4j</groupId>
+              <artifactId>slf4j-nop</artifactId>
+              <version>1.7.5</version>
+          </dependency>
+
+ 3、添加两个class VlcjDevice VlcjDriver 因为最新的sarxos webcam capture 没有这两个类了。
+ 4、编写Main  注意RTSP地址为海康传统格式 因为带有账号密码
+
+ 多台设备
